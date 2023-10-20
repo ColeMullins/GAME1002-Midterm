@@ -1,5 +1,162 @@
 ﻿title: Start
 tags:
+position: 0,0
 ---
-Hello World!
+You find your character Eris in a desolate, eerie land. You set up a small camp for yourself, and then look out in the distance and see multiple paths all leading to a variety of fragmented lands.
+Looking down the Left path leads you to a wasteland with crude liquids and heavy fog.
+Glancing at the Middle path leads to what looks like a strange alien-like structures that have been abandoned for a long time.
+Peering down the Right path gives you a better look at completely manufactured robotic looking area, you can see some commotion going on as well.
+Which path do you take?
+-> The Left path
+    <<jump Left>>
+-> The Middle path
+    <<jump Middle>>
+-> The Right path
+    <<jump Right>>
+-> Stay in camp
+    <<jump Camp>>
+===
+
+title: Camp
+position: 125,600
+---
+You sleep the night away after you made no progress...
+Ending 3
+===
+
+title: Left
+position: -250,150
+---
+You travel down the left path, on the way you find a rune engraved with a strange language.
+-> Investigate the rune, see if you can learn what it says and its purpose.
+    <<jump Rune>>
+-> Leave it alone and continue on the path, it could be a trap
+    <<jump Dragon>>
+===
+
+title: Rune
+position: -500,300
+---
+You take a closer look at the Rune in front of you, investigation leads you to believe that this rune will let you communicate in languages you don't understand.
+-> Continue on the path, if you run into anything you don't understand, this rune will be helpful.
+    <<jump Dragon2>>
+===
+
+title: Dragon
+position: -250,300
+---
+You find yourself in this foggy damp new land. Almost nothing could sustain life here.
+You notice a large figure infront of you, upon closer inspection it appears to be a large dragon minding it's own buisness.
+You bring yourself to walk up to it, you have never seen a dragon before and are curious.
+The dragon doesn't even look at you, completely unbothered by you or your presence. 
+After trying to communicate with the Dragon and being left without a response, you decide it would be better to head back to camp as you are not getting any progress.
+    <<jump Camp>>
+===
+
+title: Dragon2
+position: -500,450
+---
+Walking into this unknown almost haunted place, you can't help but notice that there is an unknown creature before you.
+You attempt to communicate with the creature, the rune that you collected earlier activates automatically.
+Eris: H-Hello?
+???: Ah... I didn't know there was another that could speak our tongue. I haven't heard it in so long.
+???: I am Aurelia, the Peaceful Wyrm. The Last of my kind.
+Aurelia: My race was once proud and noble, but that was before my time.
+Aurelia: After time, we were discovered by a group of machines, and all we have known since is war.
+Aurelia: I have now denounced all forms of violence and harm, spending the rest of my time here waiting for my days to end.
+Aurelia: If you have nothing else to say, please leave. I have nothing more to say.
+Your encounter with the Dragon has left you with a feeling of sadness and grief, but you return to your camp to reflect.
+    <<jump Camp2>>
+===
+
+title: Middle
+position: 0,150
+---
+You walk down the middle path, it leads you to an open space with strangely shaped structures. Paying attention to the details leads you to believe they haven't been used in a long time.
+You spot a small feint light nearby, and move towards it in curiosity.
+    <<jump Alien>>
+===
+
+title: Alien
+position: 0,300
+---
+Arriving at the feint light, it suddenly grows stronger and before you appears a ghostly figure.
+???: Hello Human. Welcome to the Abode of the Holo-Alter.
+Eris: Uh... Hi. How did you know I'm human? Actually first, how are you even talking to me?
+???: We know everything. A fraction of the knowledge we posses is more than enough to drive a Human to insanity.
+???: I am known as Ookla-jib, one of the primary Knowledge Keepers of the Holo-Alter.
+Ookla-jib: We know every race of existence and every language they speak, and humanities form of communication is quite simple.
+Ookla-jib: As you may have surmised, we have cast away our mortal flesh, electing to become immortal beings to sustain our endless pursuit of knowledge.
+Ookla-jib: But now, with the truth of the universe revealed to us, we can only regret that decision.
+Ookla-jib: We know search for away to return to our previous mortal form. 
+Eris: And why is that? Didn't you say being an immortal spirit being or whatever is better for your quest for uhh... learning stuff?
+Ookla-jib: You are correct. I can not tell you why we have had a change of mind. You simply Cannot Fathom it.
+-> "Come on, tell me! Now i'm super curious as well."
+    <<jump Truth>>
+-> Give up and return to the camp.
+    <<jump Camp2>>
+===
+
+title: Truth
+position: 0,450
+---
+Ookla-jib: Very well. In our long storied existence we have always pursued a greater purpose. Something to truly set us aside from the rest.
+Ookla-jib: Finally our search bore fruit, but the answer we arrived at would change our perspective in an unexpected way.
+Ookla-jib: We surmised that at one day, all will come to an end. All life will end, and nothing will remain.
+Ookla-jib: Now all we wish for is death. Nothing would be greater. It is better to live in ignorant bliss than to be cursed with knowledge.
+Ookla-jib: Now that you have learned of our truth, there is one two options for you. 
+Ookla-jib: Hand over your body of your own free will, or leave.
+Eris: Wait... What?!! Let me think.
+-> Return to camp and think about what you have just learned.
+    <<jump Camp2>>
+-> Give up and hand over your body, the truth you have learned has convinced you of the same opinion.
+Hidden Ending, Restart the Game.
+    <<jump Start>>
+===
+
+title: Right
+position: 250,150
+---
+You take a step down the right path, realizing this indeed does look like a completely robotic world.
+Immediately you spot some of the inhabitants, all man-made and on patrol. They all seem to be in a state of combat readiness.
+One of the beings catches your eye, it seems to be acting... odd.
+    <<jump Robot>>
+===
+
+title: Robot
+position: 250,300
+---
+You walk up to the strange robot, it immediately responds, asking you for your identification number.
+???: State your designation and serial number.
+Eris: Uhm... I don't have one. 
+???: Return to the maintenance area immediately.
+Eris: Wait wait wait, can I atleast know your name?
+???: We have no Names. Only Designations and Serial Numbers. State yours or return to mainetnance at once.
+Eris: Cmon. I'm not a machine like you, I have a name! Not just some number. If I can't know your name can you tell me your number?
+???: ...
+The Robot Being pauses for an odd amount of time, taking a while to contemplate what you just said.
+???: N-48245.
+Eris: Finally thank you! Well 48245, can I call you Four-Five?
+N-48245: ... 
+N-48245: Return to your post immediately.
+Eris: Ooooookay. Fine.
+-> Return to camp, you are confused as to why that robot took awhile to respond a few times.
+    <<jump Camp2>>
+-> Refuse to leave, pester the robot further.
+    <<jump Robot2>>
+===
+
+title: Robot2
+position: 250,450
+---
+You tell robot you refuse to leave and begin to question in further, it calls over some secutiy forces to deal with you.
+You are taken away and turned into a machine...
+Ending 2
+===
+
+title: Camp2
+position: -125,600
+---
+You return back to the camp for the day, reflecting on your journey so far and giving some thought to what you may be able to do to help these poor unfortunate beings.
+Ending 1
 ===
